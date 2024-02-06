@@ -15,8 +15,8 @@ main {
 }
 
 .main-container {
-    height: 60%;
-    width: 40%;
+    height: 70%;
+    width: 45%;
 
     display: flex;
     flex-direction: column;
@@ -27,22 +27,24 @@ main {
 .card {
     width: 100%;
     border-radius: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
 }
 
 .first {
     background-color: hsl(10, 79%, 65%);
     height: 25%;
     margin-bottom: 13px;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 0 30px 0 40px;
+    padding: 20px 40px 20px 40px;
 }
 
 .second {
     background-color: white;
     height: 75%;
     margin-top: 13px;
+    flex-direction: column;
+    padding: 20px 20px 50px 20px;
 }
 
 .left-side{
@@ -56,14 +58,13 @@ main {
 
 .balance-name {
     font-weight: 400;
-    font-size: 18px;
+    font-size: 1.2em;
     color: white;
-    margin-bottom: 12px;
 }
 
 .balance-value {
     font-weight: 700;
-    font-size: 36px;
+    font-size: 2.3em;
     color: white;
 }
 
@@ -88,3 +89,42 @@ main {
 .two{
     background-color: black;
 }
+
+.chart{
+    width: 100%;
+    height: 240px;
+    background-color: aqua;
+}
+
+
+.summary{
+    height: 25%;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+    padding: 0 50px 0 40px;
+}
+
+.black{
+    color: black;
+}
+
+.gray{
+    color: rgb(0, 0, 0, 0.5);
+}
+
+.bigger{
+    font-size: 3em;
+}
+
+.smaller{
+    font-size: 1.2em;
+}
+
+.change-direction{
+    flex-direction: column;
+    text-align: right;
+}
+
+.

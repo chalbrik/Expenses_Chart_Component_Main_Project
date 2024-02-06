@@ -1,43 +1,63 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- displays site properly based on user's device -->
 
-  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
-  
-  <title>Frontend Mentor | Expenses chart component</title>
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./images/favicon-32x32.png"
+    />
 
-  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
-  <style>
-    .attribution { font-size: 11px; text-align: center; }
-    .attribution a { color: hsl(228, 45%, 44%); }
-  </style>
-</head>
-<body>
+    <title>Frontend Mentor | Expenses chart component</title>
 
-  My balance
-  $921.48
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=DM+Sans:opsz,wght@9..40,400;9..40,700&display=swap"
+      rel="stylesheet"
+    />
 
-  Spending - Last 7 days
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <main>
+      <div class="main-container">
+        <div class="first card">
+          <div class="left-side">
+          <span class="balance-name font">My balance</span>
+          <span class="balance-value font">$921.48</span>
+          </div>
+          <div class="right-side">
+            <div class="circle one"></div>
+            <div class="circle two"></div>
+          </div>
+    
+        </div>
+        <div class="second card">
+          <h1>Spending - Last 7 days</h1>
+          <div class="chart"></div>
+          <hr>
+          <div class="summary">
+            <div class="left-side">
+              <span class="balance-name font gray">Total
+                this month</span>
+              <span class="balance-value font black change-size">$478.33</span>
+              </div>
+              <div class="right-side change-direction">
+                <span class="balance-value font black change-size">+2.4%</span>
+                <span class="balance-name font gray">from last month</span>
+              </div>
+          </div>
+        </div>
+      </div>
+    </main>
 
-  mon
-  tue
-  wed
-  thu
-  fri
-  sat
-  sun
+     mon tue wed thu fri sat sun 
 
-  Total this month
-  $478.33
-
-  +2.4%
-  from last month
-  
-  <div class="attribution">
-    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
-    Coded by <a href="#">Your Name Here</a>.
-  </div>
-</body>
+    <script src="index.js"></script>
+  </body>
 </html>
