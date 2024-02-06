@@ -33,9 +33,9 @@ const charData = [
 
 const actualDate = new Date();
 let today = actualDate.getDay();
-if (today === 0) {
-  today = 7;
-}
+
+today = today === 0 ? 7 : today; //zamien 0 na 7 jeżeli nr dnia wynosi 0
+
 
 window.onload = () => {
   var highestAmount = 0;
@@ -58,6 +58,11 @@ window.onload = () => {
     const chartBarData = document.createElement("div");
     chartBarData.className = "chart-bar-data";
 
+    const chartAmountDisplay = document.createElement("span")
+    chartAmountDisplay.textContent = `$${dataItem.amount}`;
+    chartAmountDisplay.className = "display-amount font balance-name";
+    chartAmountDisplay.hidden = true;
+
     const chartBar = document.createElement("div");
     chartBar.id = `bar-${createId}`;
     createId++;
@@ -71,6 +76,7 @@ window.onload = () => {
     chartBarName.className = "balance-name font gray";
     chartBarName.textContent = dataItem.day;
 
+    chartBarData.appendChild(chartAmountDisplay);
     chartBarData.appendChild(chartBar);
     chartBarData.appendChild(chartBarName);
 
@@ -79,6 +85,28 @@ window.onload = () => {
 
 
   //zamien kolor dziejszego słupka
-  const prob = document.querySelector(`div#bar-${today}`);
-  console.log(prob);
+  const todaysBar = document.querySelector(`div#bar-${today}`);
+  todaysBar.classList.add("bar-color-today");
+
+// wyswieltaj dane liczbowe dla pojedynczego słupka
+  document.querySelectorAll("div.chart-bar").forEach((chart) =>{
+    chart.addEventListener("mouseover", (event)=>{
+        if(event){
+
+            document.getElementById(chart.id).previousElementSibling.hidden = false;  
+        }
+    })
+  });
+
+  document.querySelectorAll("div.chart-bar").forEach((chart) =>{
+    chart.addEventListener("mouseout", (event)=>{
+        if(event){
+
+            document.getElementById(chart.id).previousElementSibling.hidden = true;  
+        }
+    })
+  });
+ 
 };
+
+
