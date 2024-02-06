@@ -52,7 +52,7 @@ window.onload = () => {
   const chartContainerHeight = chartContainer.clientHeight; //pobierz wysokość diva .chart
 
   //stwórz wspólczynik mnożenia tak aby najwyższy słupek wynosił 3/4 wysokości kontenera
-  heightMultiplyFactor = 0.75 * (chartContainerHeight / highestAmount);
+  heightMultiplyFactor = 0.7 * (chartContainerHeight / highestAmount);
 
   charData.forEach((dataItem) => {
     const chartBarData = document.createElement("div");

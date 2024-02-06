@@ -15,7 +15,7 @@ main {
 }
 
 .main-container {
-    height: 70%;
+    height: 75%;
     width: 45%;
 
     display: flex;
@@ -44,7 +44,14 @@ main {
     height: 75%;
     margin-top: 13px;
     flex-direction: column;
-    padding: 20px 40px 50px 40px;
+    padding: 40px 40px 40px 40px;
+}
+
+h1{
+    font-size: 2.3em;
+    margin: 0 0 0 0;
+    width: 100%;
+    text-align: left;
 }
 
 .left-side{
@@ -92,7 +99,7 @@ main {
 
 .chart{
     width: 100%;
-    height: 240px; 
+    height: 300px; 
     /* mozliwe ze tu wysokosć trzebabędzi cos zamienić, zobacz pozniej */
     display: flex;
     flex-direction: row;
@@ -110,8 +117,8 @@ main {
     align-items: flex-end;
 }
 
-.black{
-    color: black;
+.brown{
+    color: hsl(25, 47%, 15%);
 }
 
 .gray{
@@ -171,6 +178,7 @@ main {
     border-radius: 4px;
     align-self: center;
     text-align: center;
+    font-weight: 700;
     
 }
 
