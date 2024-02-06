@@ -44,7 +44,7 @@ main {
     height: 75%;
     margin-top: 13px;
     flex-direction: column;
-    padding: 20px 20px 50px 20px;
+    padding: 20px 40px 50px 40px;
 }
 
 .left-side{
@@ -92,8 +92,13 @@ main {
 
 .chart{
     width: 100%;
-    height: 240px;
-    background-color: aqua;
+    height: 240px; 
+    /* mozliwe ze tu wysokosć trzebabędzi cos zamienić, zobacz pozniej */
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: flex-end;
+    
 }
 
 
@@ -127,4 +132,27 @@ main {
     text-align: right;
 }
 
-.
+.chart-bar-data{
+    width: 10%;
+    display: flex;
+    flex-direction: column;
+    /* justify-content: center; */
+    /* align-items: center; */
+}
+
+.chart-bar-data > p{
+    margin: 2px 0 0 0;
+    text-align: center;
+}
+
+.chart-bar{
+    width: 100%;
+    background-color: hsl(10, 79%, 65%);
+    border-radius: 5px;
+}
+
+hr{
+    border: 1px solid rgb(0, 0, 0, 0.2);
+    width: 100%;
+    margin: 5px 0 0 0;
+}
