@@ -46,7 +46,7 @@ main {
 }
 
 .second {
-    background-color: hsl(27, 66%, 92%);
+    background-color: hsl(33, 100%, 98%);
     height: 80%;
     margin-top: 13px;
     flex-direction: column;
